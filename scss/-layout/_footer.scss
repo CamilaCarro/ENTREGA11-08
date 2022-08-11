@@ -1,0 +1,41 @@
+//footer aplicando Sass
+.footer{
+    background-color:rgb(26, 26, 26);
+    &--redes{
+        height:100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .bi{
+            color:rgb(149, 43, 43);
+        }
+    }
+    &--informacion{
+        color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .footer-link{
+            margin-bottom: 30px;
+            text-decoration: none;
+            color: gray;
+            &:hover{
+                color: rgb(159, 58, 58);
+            }
+        }
+    }
+    &--datos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        p{
+            color: black;
+        }
+    } 
+}
+
+
+

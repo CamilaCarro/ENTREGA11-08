@@ -1,0 +1,289 @@
+@media only screen and (max-width:600px) {
+    /*index*/
+    .container-fluir{
+        justify-content: space-around;
+    }
+   .menu-principal{
+        height: 400px;
+    }
+    .titulo-menuprincipal{
+        font-size: 40px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+   .imagenproyecto{
+        height:200px;
+        width: 80%;
+    }
+    .info_secundaria p{
+        font-size:15px ;
+    }
+    .info_secundaria h2{
+        font-size: 18px;
+    }
+    .menu-secundario{
+        gap:10px;
+        height: 450px;
+    }
+    .info_secundaria{
+        width: 80%;
+    }
+    .boton{
+        font-size: 15px;
+    }
+    /*footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 170px;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+    .footer--informacion{
+        font-size: 12px;
+    }
+    .footer--datos{
+        height: 30px;
+    }
+    .footer--datos p{
+        font-size: 12px;
+    }
+    /*formulario*/
+    .menuformulario {
+        height: 700px;
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagenes/mini-fotoformulario.jpg);
+    }
+    .formulario {
+        height: 450px;
+        width: 80%;
+    }
+    .uno{
+        width: 130px;
+        height: 130px;
+    }
+    .dos{
+        width: 130px;
+        height: 130px;
+    }
+    .tres{
+        width: 130px;
+        height: 130px;
+    }
+  /*productos*/
+   .grilladefotos{
+        grid-template-columns: 45% 45% ;
+        grid-template-rows: 250px 250px ;
+        grid-template-areas:"areaa areab"
+                            "areac aread";
+        justify-content: center;
+        align-content: center;                    
+    }
+    .unococina{
+        height:180px;
+        width: 160px;
+    }
+    
+    /*quienesomos*/
+    .menu-quienes-somos{
+        grid-template-columns:100%;
+        grid-template-rows:300px 250px 200px 300px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4";
+    }
+   .fotoquienesomos{
+        height: 90%;
+        width: 80%;
+    }
+    span{
+        font-size: 60px;
+    }
+    .info-quienessomos{
+        font-size: 18px;
+    }
+    /*comercial*/ 
+    .maincomercial{
+        height: 1400px;
+        flex-direction: column;
+    }
+    .articulo{
+        height: 400px;
+        width: 100%;
+    }
+    .local{
+        height: 200px;
+        width: 210px;
+    }
+    .articulo p{
+        margin-top: 30px;
+        width: 230px;
+        font-size: 15px;
+    }
+    
+}
+@media only screen and (min-width:600px){
+    /*index*/
+    .menu-principal{
+        height: 500px; 
+    }
+    .titulo-menuprincipal{
+        font-size: 70px;
+    }
+    .menu-secundario{
+        gap: 80px;
+        height: 600px;
+        flex-direction: column;    
+    }
+    .imagenproyecto{
+        height: 300px;
+        width: 500px;
+    }
+    /*footer*/
+    .footer{
+        height: 250px;
+    }
+    .bi{
+        font-size: 20px;
+    }
+    .footer--informacion{
+        font-size: 17px;
+    }
+    .footer--datos{
+        height: 50px;
+    }
+    .footer--datos p{
+        font-size: 20px;
+    }
+    /*Formulario*/
+    .menuformulario{
+        height: 800px;
+    }
+    .formulario{
+        height: 500px;
+        width: 400px;
+    }
+    /*quienessomos*/
+    .menu-quienes-somos{
+        grid-template-columns:100%;
+        grid-template-rows:600px 250px 300px 250px;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+    }
+    .lodesantana{
+        font-size: 60px;
+    }
+    span{
+        font-size: 80px;
+    }
+    .uno{
+        width: 150px;
+        height: 150px;
+    }
+    .dos{
+        width: 150px;
+        height: 150px;
+    }
+    .tres{
+        width: 150px;
+        height: 150px;
+    }
+    .info-quienessomos{
+        font-size: 30px;
+    }
+    
+    .info-quienessomos{
+        font-size: 22px;
+    }
+    .fotoquienesomos{
+        height: 400px;
+        width: 80%;
+    }
+    /*comercial*/
+    .maincomercial{
+        height: 800px;
+    }
+    .articulo{
+        height: 500px;
+        width: 40%;
+    }
+    .local{
+        height: 180px;
+        width: 80%;
+    }
+    .articulo p {
+        margin-top: 30px;
+        width: 60%;
+        font-size: 15px;
+    }
+    .grilladefotos{
+        grid-template-areas:"areaa areab"
+                            "areac aread";
+    }
+    .unococina{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media only screen and (min-width:992px){
+    /*index*/
+    .nav-link{
+        font-size: 18px;
+    }
+    .menu-principal{
+        height: 600px; 
+        flex-direction: row; 
+    }
+    .titulo-menuprincipal{
+        font-size: 80px;
+    }
+    .menu-secundario{
+        height: 450px;
+    }
+    .info_secundaria h2{
+        font-size: 25px;
+    }
+    .info_secundaria p{
+        font-size:20px ;
+    }
+    .info_secundaria{
+        width: 30%;
+    }
+    /*productos*/
+    .grilladefotos{
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows:400px ;
+        grid-template-areas:"areaa areab areac aread";
+    }
+    /*quienesomos*/
+    .menu-quienes-somos{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 250px 200px;
+        grid-template-areas:"a1 a2"
+                            "a1 a3"
+                            "a1 a4";
+    }
+    /*comercial*/
+    .maincomercial{
+        height: 1000px;
+    }
+    .articulo{
+        height: 800px;
+        width: 800px;
+    } 
+    .local{
+        height: 300px;
+        width: 320px;
+    }
+    .articulo p {
+        margin-top: 40px;
+        width: 330px;
+        font-size: 18px;
+    }
+    
+}
