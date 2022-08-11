@@ -1,4 +1,4 @@
-//menuprincipalindex   aplicando SAS
+//menuprincipalindex   aplicando SASS
 .menu-principal{
     display: flex;
     justify-content: center;
@@ -41,8 +41,6 @@
     
 }
 
-
-
 //productos
 .grilladefotos{
     display: grid;
@@ -50,7 +48,7 @@
     align-content: center;
     justify-items: center;
     align-items: center;
-    background-color: gray;                  
+    background-color: $colorfondoprincipal;                  
 }
 .galeriauno{
     grid-area: areaa;

@@ -1,8 +1,8 @@
 //aplicando SAS
 
 .nav-link:hover {
-    color: brown;
-    transform: scale(1.2,1.2);
+    color: $colorprincipal;
+    transform:scale(1.2,1.2);
 
 }
 .navbar-toggler{

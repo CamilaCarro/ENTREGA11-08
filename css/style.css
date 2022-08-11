@@ -1,4 +1,256 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.img {
+  height: 100%;
+  width: 100%; }
+
+.nav-link:hover {
+  color: #952b2b;
+  transform: scale(1.2, 1.2); }
+
+.navbar-toggler {
+  height: 60px;
+  width: 60px; }
+  .navbar-toggler-icon {
+    height: 40px;
+    width: 40px; }
+
+.menu-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imagenes/cocinamoderna.jpg);
+  background-size: cover;
+  background-position: center; }
+  .menu-principal .titulo-menuprincipal {
+    text-align: center;
+    color: #f0f0f0; }
+
+.menu-secundario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d7d7d7;
+  padding: 0 20px 0 20px;
+  flex-wrap: wrap; }
+  .menu-secundario .imagenproyecto {
+    border: solid 3px #c8c8d7; }
+  .menu-secundario .info_secundaria {
+    text-align: center; }
+    .menu-secundario .info_secundaria h2 {
+      color: black;
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 0 0 20px 0; }
+    .menu-secundario .info_secundaria .p {
+      text-align: center;
+      font-family: 'Edu SA Beginner', cursive; }
+
+.grilladefotos {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: gray; }
+
+.galeriauno {
+  grid-area: areaa; }
+
+.galeriados {
+  grid-area: areab; }
+
+.galeriatres {
+  grid-area: areac; }
+
+.galeriacuatro {
+  grid-area: aread; }
+
+.unococina:hover {
+  transform: scale(1.2, 1.2); }
+
+.menu-quienes-somos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-image: linear-gradient(#2b2a2a, #8d8a8a); }
+
+.fotoquienesomos {
+  grid-area: a1;
+  border-radius: 50%; }
+
+.lodesantana {
+  grid-area: a2;
+  color: #1d1c1c; }
+
+span {
+  color: #202020;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif; }
+
+.elementos {
+  grid-area: a3;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  height: 140px; }
+
+.uno {
+  background-color: #bf5d5d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ideas {
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif; }
+
+.info-quienessomos {
+  grid-area: a4;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif; }
+
+.dos {
+  background-color: #9c9ca3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tres {
+  background-color: rgba(92, 43, 43, 0.934);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.maincomercial {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.articulo {
+  background-color: #9d9797;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.articulo p {
+  background-color: #bb756c;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif; }
+
+/*Formulario*/
+.menuformulario {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imagenes/mini-fotoformulario.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.formulario h1 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  color: white;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.formulario h1:hover {
+  transform: scale(1.2, 1.2); }
+
+.form-label {
+  font-weight: normal;
+  font-size: 18px;
+  font-family: sans-serif;
+  display: block;
+  color: #af1a1a;
+  margin-bottom: 5px;
+  padding-left: 8px; }
+
+.form-input {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: sans-serif;
+  display: block;
+  color: #8a8888;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none; }
+
+input:focus {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white; }
+
+.text-area {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: sans-serif;
+  display: block;
+  color: #8a8888;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none; }
+
+.boton-enviar {
+  width: 100%;
+  color: #af1a1a;
+  background: #8a8888;
+  border: none;
+  height: 40px; }
+
+.boton-enviar:hover {
+  transform: scale(1.2, 1.2); }
+
+.footer {
+  background-color: #1a1a1a; }
+  .footer--redes {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .footer--redes .bi {
+      color: #952b2b; }
+  .footer--informacion {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .footer--informacion .footer-link {
+      margin-bottom: 30px;
+      text-decoration: none;
+      color: gray; }
+      .footer--informacion .footer-link:hover {
+        color: #9f3a3a; }
+  .footer--datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .footer--datos p {
+      color: black; }
+
 @media only screen and (max-width: 600px) {
   /*index*/
   .container-fluir {
@@ -204,255 +456,3 @@
     margin-top: 40px;
     width: 330px;
     font-size: 18px; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.img {
-  height: 100%;
-  width: 100%; }
-
-.nav-link:hover {
-  color: brown;
-  transform: scale(1.2, 1.2); }
-
-.navbar-toggler {
-  height: 60px;
-  width: 60px; }
-  .navbar-toggler-icon {
-    height: 40px;
-    width: 40px; }
-
-.menu-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../imagenes/cocinamoderna.jpg);
-  background-size: cover;
-  background-position: center; }
-  .menu-principal .titulo-menuprincipal {
-    text-align: center;
-    color: #f0f0f0; }
-
-.menu-secundario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #d7d7d7;
-  padding: 0 20px 0 20px;
-  flex-wrap: wrap; }
-  .menu-secundario .imagenproyecto {
-    border: solid 3px #c8c8d7; }
-  .menu-secundario .info_secundaria {
-    text-align: center; }
-    .menu-secundario .info_secundaria h2 {
-      color: black;
-      font-weight: bold;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 0 0 20px 0; }
-    .menu-secundario .info_secundaria .p {
-      text-align: center;
-      font-family: 'Edu SA Beginner', cursive; }
-
-.grilladefotos {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  background-color: gray; }
-
-.galeriauno {
-  grid-area: areaa; }
-
-.galeriados {
-  grid-area: areab; }
-
-.galeriatres {
-  grid-area: areac; }
-
-.galeriacuatro {
-  grid-area: aread; }
-
-.unococina:hover {
-  transform: scale(1.2, 1.2); }
-
-.menu-quienes-somos {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  background-image: linear-gradient(#2b2a2a, #8d8a8a); }
-
-.fotoquienesomos {
-  grid-area: a1;
-  border-radius: 50%; }
-
-.lodesantana {
-  grid-area: a2;
-  color: #1d1c1c; }
-
-span {
-  color: #202020;
-  font-weight: bold;
-  font-family: 'Work Sans', sans-serif; }
-
-.elementos {
-  grid-area: a3;
-  display: flex;
-  justify-content: space-around;
-  width: 95%;
-  height: 140px; }
-
-.uno {
-  background-color: #bf5d5d;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.ideas {
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif; }
-
-.info-quienessomos {
-  grid-area: a4;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif; }
-
-.dos {
-  background-color: #9c9ca3;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.tres {
-  background-color: rgba(92, 43, 43, 0.934);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.maincomercial {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.articulo {
-  background-color: #9d9797;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.articulo p {
-  background-color: #bb756c;
-  text-align: center;
-  font-family: 'Work Sans', sans-serif; }
-
-/*Formulario*/
-.menuformulario {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagenes/foto-formulario.webp);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.formulario {
-  background-color: rgba(0, 0, 0, 0.6); }
-
-.formulario h1 {
-  text-align: center;
-  margin: 20px 0 20px 0;
-  color: white;
-  font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-.formulario h1:hover {
-  transform: scale(1.2, 1.2); }
-
-.form-label {
-  font-weight: normal;
-  font-size: 18px;
-  font-family: sans-serif;
-  display: block;
-  color: #af1a1a;
-  margin-bottom: 5px;
-  padding-left: 8px; }
-
-.form-input {
-  font-weight: normal;
-  font-size: 12px;
-  font-family: sans-serif;
-  display: block;
-  color: #8a8888;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 12px;
-  margin-bottom: 20px;
-  width: 100%;
-  border: none; }
-
-input:focus {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white; }
-
-.text-area {
-  font-weight: normal;
-  font-size: 12px;
-  font-family: sans-serif;
-  display: block;
-  color: #8a8888;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 12px;
-  margin-bottom: 20px;
-  width: 100%;
-  border: none; }
-
-.boton-enviar {
-  width: 100%;
-  color: #af1a1a;
-  background: #8a8888;
-  border: none;
-  height: 40px; }
-
-.boton-enviar:hover {
-  transform: scale(1.2, 1.2); }
-
-.footer {
-  background-color: #1a1a1a; }
-  .footer--redes {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; }
-    .footer--redes .bi {
-      color: #952b2b; }
-  .footer--informacion {
-    color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; }
-    .footer--informacion .footer-link {
-      margin-bottom: 30px;
-      text-decoration: none;
-      color: gray; }
-      .footer--informacion .footer-link:hover {
-        color: #9f3a3a; }
-  .footer--datos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; }
-    .footer--datos p {
-      color: black; }
