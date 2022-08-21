@@ -1,6 +1,6 @@
 /*Formulario*/
 .menuformulario {
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../imagenes/mini-fotoformulario.jpg);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../imagenes/mini-fotoformulario.png);
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -24,42 +24,39 @@
 .formulario h1:hover{
     transform: scale(1.2,1.2);
 }
-.form-label  {
+.form{
     font-weight: normal;
-    font-size: 18px;
     font-family: sans-serif;
     display:block;
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-label{
+    @extend .form;
+    font-size:18px;
     color: rgb(175, 26, 26);
     margin-bottom: 5px;
     padding-left: 8px;
+    
 }
 .form-input {
-    font-weight: normal;
+    @extend .form;
     font-size: 12px;
-    font-family: sans-serif;
-    display:block;
     color: rgb(138, 136, 136);
     background: rgba(0,0,0,0.7);
     padding: 12px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: none;
 }
 input:focus{
     background-color: rgba(0,0,0,0.9);
     color: white;
 }
 .text-area {
-    font-weight: normal;
+    @extend .form;
     font-size: 12px;
-    font-family: sans-serif;
-    display:block;
     color: rgb(138, 136, 136);
     background: rgba(0,0,0,0.7);
     padding: 12px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: none;
 }
 
 .boton-enviar{
@@ -72,3 +69,4 @@ input:focus{
 .boton-enviar:hover{
     transform: scale(1.2,1.2);
 }
+

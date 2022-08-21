@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../imagenes/cocinamoderna.jpg);
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../imagenes/cocinamoderna.png);
     background-size: cover;
     background-position: center;
     
@@ -71,6 +71,7 @@
     justify-items: center;
     align-items: center;
     background-image: linear-gradient(rgb(43, 42, 42),rgb(141, 138, 138));
+    overflow-x: hidden;
 }
 .fotoquienesomos{
     grid-area:a1;
@@ -126,20 +127,32 @@ span{
 }
 //menucomercial
 .maincomercial{
-    background-color:black;
+    background-color:$colorfondoprincipal;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .articulo{
-    background-color: rgb(157, 151, 151);
+    background-color: rgb(145, 145, 145);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.articulo p {
-    background-color: rgb(187, 117, 108);
+
+@mixin cartas_de_informacion ($color_letra , $color_fondo , $tamaniodeletra){
+    color: $color_letra;
+    background-color: $color_fondo;
     text-align: center;
+    font-size: $tamaniodeletra;
     font-family: 'Work Sans', sans-serif;
+}
+.articulo__parrafouno{
+   @include cartas_de_informacion(rgb(24, 23, 23) , $colorfondoprincipal ,20px)
+}
+.articulo__parrafodos{
+    @include cartas_de_informacion(rgb(63, 55, 55) , rgb(209, 95, 95), 15px) 
+}
+.articulo__parrafotres{
+    @include cartas_de_informacion(rgb(19, 18, 18) , $colorfondoprincipal ,20px)
 }
