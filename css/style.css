@@ -82,7 +82,8 @@
   justify-items: center;
   align-items: center;
   background-image: linear-gradient(#2b2a2a, #8d8a8a);
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  text-align: center; }
 
 .fotoquienesomos {
   grid-area: a1;
@@ -105,7 +106,7 @@ span {
   height: 140px; }
 
 .uno {
-  background-color: #bf5d5d;
+  background-color: #faf3f3;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -122,18 +123,29 @@ span {
   font-family: 'Work Sans', sans-serif; }
 
 .dos {
-  background-color: #9c9ca3;
+  background-color: #bf5d5d;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .tres {
-  background-color: rgba(92, 43, 43, 0.934);
+  background-color: #9c9ca3;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.informacion-quienes {
+  display: flex;
+  align-items: center;
+  background-color: #faf3f3; }
+  .informacion-quienes_articulo {
+    text-align: center;
+    border-bottom: 5px solid gray; }
+    .informacion-quienes_articulo_parrafo {
+      color: #a82b2b;
+      font-size: 20px; }
 
 .maincomercial {
   background-color: gray;
@@ -142,7 +154,7 @@ span {
   align-items: center; }
 
 .articulo {
-  background-color: #919191;
+  background-color: #d7d7d7;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,7 +183,7 @@ span {
 
 /*Formulario*/
 .menuformulario {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/mini-fotoformulario.png);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/foto-formulario.png);
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -307,7 +319,7 @@ input:focus {
   /*formulario*/
   .menuformulario {
     height: 700px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/mini-fotoformulario.jpg); }
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/mini-fotoformulario.png); }
   .formulario {
     height: 450px;
     width: 80%; }
@@ -342,6 +354,10 @@ input:focus {
     font-size: 60px; }
   .info-quienessomos {
     font-size: 18px; }
+  .informacion-quienes {
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-around; }
   /*comercial*/
   .maincomercial {
     height: 1400px;
@@ -390,7 +406,7 @@ input:focus {
   /*quienessomos*/
   .menu-quienes-somos {
     grid-template-columns: 100%;
-    grid-template-rows: 600px 250px 300px 250px;
+    grid-template-rows: 500px 250px 300px 200px;
     grid-template-areas: "a1" "a2" "a3" "a4"; }
   .lodesantana {
     font-size: 60px; }
@@ -412,6 +428,10 @@ input:focus {
   .fotoquienesomos {
     height: 400px;
     width: 80%; }
+  .informacion-quienes {
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-around; }
   /*comercial*/
   .maincomercial {
     height: 800px; }
@@ -419,8 +439,8 @@ input:focus {
     height: 500px;
     width: 40%; }
   .local {
-    height: 180px;
-    width: 80%; }
+    height: 250px;
+    width: 90%; }
   .articulo p {
     margin-top: 30px;
     width: 60%;
@@ -457,17 +477,21 @@ input:focus {
     grid-template-areas: "areaa areab areac aread"; }
   .carousel {
     width: 80%;
-    height: 500px;
+    height: 550px;
     margin-left: 10%; }
   .carousel-menu {
     background-color: gray; }
   .d-block {
-    height: 500px; }
+    height: 550px; }
   /*quienesomos*/
   .menu-quienes-somos {
     grid-template-columns: 50% 50%;
     grid-template-rows: 250px 250px 200px;
     grid-template-areas: "a1 a2" "a1 a3" "a1 a4"; }
+  .informacion-quienes {
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-around; }
   /*comercial*/
   .maincomercial {
     height: 1000px; }
@@ -480,4 +504,7 @@ input:focus {
   .articulo p {
     margin-top: 40px;
     width: 330px;
-    font-size: 18px; } }
+    font-size: 18px; }
+  .local {
+    height: 350px;
+    width: 80%; } }

@@ -1,4 +1,4 @@
-//menuprincipalindex   aplicando SASS
+//menuprincipalindex  
 .menu-principal{
     display: flex;
     justify-content: center;
@@ -13,7 +13,6 @@
     }
        
 }
-
 .menu-secundario{
     display: flex;
     justify-content: center;
@@ -40,7 +39,6 @@
     }
     
 }
-
 //productos
 .grilladefotos{
     display: grid;
@@ -72,6 +70,7 @@
     align-items: center;
     background-image: linear-gradient(rgb(43, 42, 42),rgb(141, 138, 138));
     overflow-x: hidden;
+    text-align: center;
 }
 .fotoquienesomos{
     grid-area:a1;
@@ -95,7 +94,8 @@ span{
     height: 140px;
 }
 .uno {
-    background-color: rgb(191, 93, 93);
+    
+    background-color:rgb(250, 243, 243);
     border-radius: 50%; 
     display: flex;
     justify-content: center;
@@ -112,18 +112,34 @@ span{
     font-family: 'Work Sans', sans-serif;
 }
 .dos {
-    background-color: rgb(156, 156, 163);
+    background-color: rgb(191, 93, 93);
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;       
 }
+
 .tres {
-   background-color: rgba(92, 43, 43, 0.934);
+    background-color: rgb(156, 156, 163);
     border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;         
+}
+.informacion-quienes{
+    display: flex;
+    align-items: center;
+    background-color:rgb(250, 243, 243);
+    &_articulo{
+        text-align: center;
+        border-bottom: 5px solid gray;
+        &_parrafo{
+           color:rgb(168, 43, 43);
+           font-size: 20px;
+        }
+    }
+   
+    
 }
 //menucomercial
 .maincomercial{
@@ -133,7 +149,7 @@ span{
     align-items: center;
 }
 .articulo{
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(215, 215, 215);
     display: flex;
     flex-direction: column;
     justify-content: center;
