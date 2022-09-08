@@ -85,6 +85,9 @@
   overflow-x: hidden;
   text-align: center; }
 
+.d-grid {
+  grid-area: a5; }
+
 .fotoquienesomos {
   grid-area: a1;
   border-radius: 50%; }
@@ -148,38 +151,37 @@ span {
       font-size: 20px; }
 
 .maincomercial {
-  background-color: gray;
+  background-color: #903a3a;
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.articulo {
-  background-color: #d7d7d7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.articulo__parrafouno {
-  color: #181717;
-  background-color: gray;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif; }
-
-.articulo__parrafodos {
-  color: #3f3737;
-  background-color: #d15f5f;
-  text-align: center;
-  font-size: 15px;
-  font-family: 'Work Sans', sans-serif; }
-
-.articulo__parrafotres {
-  color: #131212;
-  background-color: gray;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif; }
+  .maincomercial-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .maincomercial_subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #7c7b7b; }
+  .maincomercial-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    background-color: #bcb1b1; }
+  .maincomercial_titulo {
+    color: white; }
+  .maincomercial-info_titulo {
+    font-weight: bold;
+    color: #2e2d2d;
+    border-bottom: 2px solid #952b2b; }
+  .maincomercial-info_parrafo {
+    color: black;
+    font-weight: lighter;
+    font-family: 'Work Sans', sans-serif; }
 
 /*Formulario*/
 .menuformulario {
@@ -281,12 +283,15 @@ input:focus {
   /*index*/
   .container-fluir {
     justify-content: space-around; }
+  .nav-item {
+    font-size: 10px;
+    color: black; }
   .menu-principal {
     height: 400px; }
   .titulo-menuprincipal {
     font-size: 40px; }
   .nav-link {
-    font-size: 12px; }
+    font-size: 17px; }
   .imagenproyecto {
     height: 200px;
     width: 80%; }
@@ -345,8 +350,22 @@ input:focus {
   /*quienesomos*/
   .menu-quienes-somos {
     grid-template-columns: 100%;
-    grid-template-rows: 300px 250px 200px 300px;
-    grid-template-areas: "a1" "a2" "a3" "a4"; }
+    grid-template-rows: 300px 250px 400px 300px 100px;
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5"; }
+  .uno {
+    width: 150px;
+    height: 160px; }
+  .dos {
+    width: 150px;
+    height: 160px; }
+  .tres {
+    width: 150px;
+    height: 160px; }
+  .elementos {
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .fotoquienesomos {
     height: 90%;
     width: 80%; }
@@ -360,27 +379,35 @@ input:focus {
     justify-content: space-around; }
   /*comercial*/
   .maincomercial {
-    height: 1400px;
-    flex-direction: column; }
-  .articulo {
-    height: 400px;
-    width: 100%; }
-  .local {
-    height: 200px;
-    width: 210px; }
-  .articulo p {
-    margin-top: 30px;
-    width: 230px;
-    font-size: 15px; } }
+    height: 150px; }
+    .maincomercial_titulo {
+      font-size: 30px; }
+    .maincomercial-imagenes {
+      height: 2200px; }
+    .maincomercial-info_titulo {
+      font-size: 22px; }
+    .maincomercial-info_parrafo {
+      font-size: 19px; }
+    .maincomercial-card_img {
+      height: 400px;
+      width: 100%; }
+    .maincomercial-card {
+      display: flex;
+      flex-direction: column;
+      width: 90%; }
+  .calidad {
+    font-size: 20px; } }
 
 @media only screen and (min-width: 600px) {
   /*index*/
   .menu-principal {
     height: 500px; }
+  .nav-link {
+    font-size: 18px; }
   .titulo-menuprincipal {
     font-size: 70px; }
   .menu-secundario {
-    gap: 80px;
+    gap: 50px;
     height: 600px;
     flex-direction: column; }
   .imagenproyecto {
@@ -406,8 +433,8 @@ input:focus {
   /*quienessomos*/
   .menu-quienes-somos {
     grid-template-columns: 100%;
-    grid-template-rows: 500px 250px 300px 200px;
-    grid-template-areas: "a1" "a2" "a3" "a4"; }
+    grid-template-rows: 500px 250px 300px 200px 100px;
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5"; }
   .lodesantana {
     font-size: 60px; }
   span {
@@ -434,17 +461,23 @@ input:focus {
     justify-content: space-around; }
   /*comercial*/
   .maincomercial {
-    height: 800px; }
-  .articulo {
-    height: 500px;
-    width: 40%; }
-  .local {
-    height: 250px;
-    width: 90%; }
-  .articulo p {
-    margin-top: 30px;
-    width: 60%;
-    font-size: 15px; }
+    height: 150px; }
+    .maincomercial_titulo {
+      font-size: 40px; }
+    .maincomercial-imagenes {
+      height: 2200px; }
+    .maincomercial-info_titulo {
+      margin-bottom: 40px;
+      text-align: center; }
+    .maincomercial-info_parrafo {
+      font-size: 20px;
+      text-align: center; }
+    .maincomercial-card_img {
+      height: 400px;
+      width: 400px; }
+    .maincomercial-card {
+      flex-direction: column; }
+  /*productos*/
   .grilladefotos {
     grid-template-columns: 50% 50%;
     grid-template-rows: 400px 400px;
@@ -455,13 +488,14 @@ input:focus {
 
 @media only screen and (min-width: 992px) {
   /*index*/
-  .nav-link {
-    font-size: 18px; }
   .menu-principal {
     height: 600px;
     flex-direction: row; }
   .titulo-menuprincipal {
     font-size: 80px; }
+  .imagenproyecto {
+    height: 350px;
+    width: 550px; }
   .menu-secundario {
     height: 450px; }
   .info_secundaria h2 {
@@ -486,25 +520,22 @@ input:focus {
   /*quienesomos*/
   .menu-quienes-somos {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 250px 200px;
-    grid-template-areas: "a1 a2" "a1 a3" "a1 a4"; }
+    grid-template-rows: 250px 250px 200px 150px;
+    grid-template-areas: "a1 a2" "a1 a3" "a1 a4" "a1 a5"; }
   .informacion-quienes {
     flex-direction: row;
     height: 300px;
     justify-content: space-around; }
   /*comercial*/
-  .maincomercial {
-    height: 1000px; }
-  .articulo {
-    height: 800px;
-    width: 800px; }
-  .local {
-    height: 300px;
-    width: 320px; }
-  .articulo p {
-    margin-top: 40px;
-    width: 330px;
-    font-size: 18px; }
-  .local {
-    height: 350px;
-    width: 80%; } }
+  .maincomercial-imagenes {
+    height: 1400px; }
+  .maincomercial_titulo {
+    font-size: 60px; }
+  .maincomercial-info_titulo {
+    font-size: 30px;
+    text-align: left; }
+  .maincomercial-info_parrafo {
+    font-size: 24px;
+    text-align: left; }
+  .maincomercial-card {
+    flex-direction: row; } }

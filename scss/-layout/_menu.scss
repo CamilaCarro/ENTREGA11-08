@@ -72,6 +72,9 @@
     overflow-x: hidden;
     text-align: center;
 }
+.d-grid{
+    grid-area: a5;
+}
 .fotoquienesomos{
     grid-area:a1;
     border-radius: 50%;     
@@ -138,37 +141,52 @@ span{
            font-size: 20px;
         }
     }
-   
-    
 }
 //menucomercial
 .maincomercial{
-    background-color:$colorfondoprincipal;
+    background-color:rgb(144, 58, 58);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.articulo{
-    background-color: rgb(215, 215, 215);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    &-imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &_subtitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid rgb(124, 123, 123);
+    }
+    &-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 80%;
+        background-color: rgb(188, 177, 177);
+    }
+    &_titulo{
+        color: white;
+    }
+    &-info_titulo{
+        font-weight: bold;
+        color: rgb(46, 45, 45);
+        border-bottom: 2px solid $colorprincipal;
+    }
+    &-info_parrafo{
+        color: black;
+        font-weight:lighter ;
+        font-family: 'Work Sans', sans-serif;
+    }
 }
 
-@mixin cartas_de_informacion ($color_letra , $color_fondo , $tamaniodeletra){
-    color: $color_letra;
-    background-color: $color_fondo;
-    text-align: center;
-    font-size: $tamaniodeletra;
-    font-family: 'Work Sans', sans-serif;
-}
-.articulo__parrafouno{
-   @include cartas_de_informacion(rgb(24, 23, 23) , $colorfondoprincipal ,20px)
-}
-.articulo__parrafodos{
-    @include cartas_de_informacion(rgb(63, 55, 55) , rgb(209, 95, 95), 15px) 
-}
-.articulo__parrafotres{
-    @include cartas_de_informacion(rgb(19, 18, 18) , $colorfondoprincipal ,20px)
-}
+
+
+    
+
+
+
+
